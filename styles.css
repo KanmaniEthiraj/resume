@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00e6e6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 180px 10%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* About Section */
+#about {
+    background: #1a1a1a;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #bbbbbb;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #00e6e6;
+    font-weight: bold;
+}
+
+/* Skills Section */
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+}
+
+.skills li i {
+    margin-right: 8px;
+    color: #00e6e6;
+    font-size: 22px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills ul {
+        justify-content: center;
+    }
+}
+/* Contact Section */
+#contact {
+    background: #121212;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #00e6e6;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input-box textarea {
+    resize: none;
+    height: 120px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #bbbbbb;
+    font-size: 16px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
